@@ -1354,6 +1354,10 @@ table {
     margin-left: 18px;
 }
 
+.copyright-unordered li:first-child{
+    margin-left: 12px;
+}
+
 .copyright-unordered li:last-child {
     margin-right: 0;
 
