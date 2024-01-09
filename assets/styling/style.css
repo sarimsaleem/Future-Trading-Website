@@ -8,6 +8,12 @@
     padding: 0;
 }
 
+body {
+    /* overflow: hidden; */
+    overflow-x: hidden;
+
+}
+
 h1,
 h2,
 h3,
@@ -45,8 +51,8 @@ h1 {
 }
 
 .navbar-logo {
-    width: 50px;
-    height: 50px;
+    width: 72px;
+    height: 72px;
 }
 
 .item-links {
@@ -92,7 +98,7 @@ h1 {
     top: 0;
     bottom: 0;
     padding: 0;
-
+    z-index: -1;
 }
 
 .section2 .overlay-header-image-container .overlay-header-image {
@@ -119,6 +125,7 @@ h1 {
     width: 100%;
     height: 100%;
     margin-left: 120px;
+    object-fit: contain;
 }
 
 
@@ -214,10 +221,11 @@ h1 {
     height: 350px;
     transform: rotate(-30deg);
     position: absolute;
-    top: -50px;
+    top: -37px;
     bottom: auto;
     left: auto;
-    right: 100px;
+    right: 16px;
+
 }
 
 .ellipse2 {
@@ -226,8 +234,8 @@ h1 {
     transform: rotate(-30deg);
     position: absolute;
     left: auto;
-    top: -78px;
-    right: 87px;
+    top: -62px;
+    right: -12px;
     bottom: auto;
 }
 
@@ -237,8 +245,8 @@ h1 {
     transform: rotate(-30deg);
     position: absolute;
     left: auto;
-    right: 70px;
-    top: -106px;
+    right: -47px;
+    top: -83px;
     bottom: auto;
 }
 
@@ -324,7 +332,7 @@ h1 {
 
 .section3-main-img {
     width: 322px;
-    height: 400px;
+    height: 475px;
     object-fit: contain;
     position: relative;
 }
@@ -513,7 +521,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 2px 0 0 0;
+    margin: 0;
 }
 
 .section4 .get-started {
@@ -598,9 +606,18 @@ h1 {
 .section5-card-body {
     border-radius: 15px;
     background: var(--White, #FFF);
-    box-shadow: 0px 28px 76px -8px rgba(235, 235, 235, 0.70);
     padding: 25px;
+    border-radius: 25px;
+    border: 1px solid var(--E4E4E4, #E4E4E4);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
 }
+.section5-card-body:hover{
+    box-shadow: 0px 28px 76px -8px rgba(235, 235, 235, 0.70);
+
+}
+
 
 .section5-card-img {
     width: 40px;
@@ -687,28 +704,34 @@ sub {
 }
 
 .section6-card-body {
-    /* width: 100%; */
-
+    width: 100%;
+    padding: 0 10px;
 }
-.section6-header{
+
+table {
+    width: 100%;
+}
+
+.section6-header {
     margin: 16px 0 0 0;
+    width: 100%;
 
 }
 
 .section6-logo {
     width: 66px;
     height: 80px;
-    margin: 10px 5px;
+    margin: 10px 0px;
 
 }
 
 .section6-h5 {
     color: var(--Black, #000);
     font-family: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    padding: 31px 0 0 16px;
+    padding: 31px 0 0 0px;
     margin: 0;
 }
 
@@ -722,28 +745,29 @@ sub {
 }
 
 .section6 hr {
-    width: 240px;
+    width: 90%;
     height: 1.5px;
     margin-left: 15px;
-
+    color: #E4E4E4;
+    margin: 18px 0;
 }
 
 .section6-h2 {
     color: var(--Black, #000);
     font-family: Inter;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-left: 15px;
-    padding-block: 20px;
+    padding-bottom: 20px;
 
 }
+
+
 
 .clock {
     display: flex;
     gap: 20px;
-    margin-left: 15px;
     padding-block: 10px;
 }
 
@@ -763,7 +787,6 @@ sub {
 .camera {
     display: flex;
     gap: 20px;
-    margin-left: 15px;
     padding-block: 10px;
 }
 
@@ -791,7 +814,7 @@ sub {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    margin: 72px 0 0 16px;
+    margin: 72px 0 0 0px;
 }
 
 .section6-h3-2 {
@@ -819,7 +842,7 @@ sub {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding: 10px 6px;
+    padding: 10px 13px;
     margin: 0px;
 }
 
@@ -903,7 +926,6 @@ sub {
 
 .section7-card {
     width: 100%;
-    height: 140px;
 }
 
 .section7-card-body {
@@ -993,12 +1015,12 @@ sub {
 
 }
 
-.form-control:focus{
+.form-control:focus {
     border: 1px solid var(--E4E4E4, #E4E4E4);
     box-shadow: none;
 }
 
-.form-select:focus{
+.form-select:focus {
     border: 1px solid var(--E4E4E4, #E4E4E4);
     box-shadow: none;
 }
@@ -1010,6 +1032,8 @@ sub {
 .section8-input2 {
     height: 110px;
     box-shadow: none;
+    padding: 10px 10px;
+
 }
 
 .section8-input3 {
@@ -1089,7 +1113,7 @@ sub {
 }
 
 .accordion {
-    width: 70%;
+    width: 80%;
 }
 
 .accordion-button {
@@ -1123,7 +1147,7 @@ sub {
 
 .non-container {
     position: relative;
-    padding-bottom: 100px;
+    padding: 55px 0 0;
     display: flex;
     justify-content: center;
 }
@@ -1171,7 +1195,7 @@ sub {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .spaces {
-    padding: 40px 20px 10px;
+    padding: 40px 0px 10px;
 }
 
 .footer {
@@ -1219,9 +1243,6 @@ sub {
 .footer-unordered3 {
     list-style: none;
 }
-.footer-unordered1 li:hover{
-    padding: 3px;
-}
 
 .footer-unordered3 li {
     color: white;
@@ -1235,10 +1256,7 @@ sub {
 
 }
 
-.footer-unordered2 li:hover
-{
-        padding: 3px;
-}
+
 
 .footer-h4 {
     color: var(--White, #FFF);
@@ -1259,10 +1277,14 @@ sub {
 .footer-email {
     background: white;
     border-radius: 10px;
-    padding: 0px 0 0 20px;
     height: 54px;
     margin-top: 20px;
     box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 5px;
 
 }
 
@@ -1273,11 +1295,11 @@ sub {
     border: 1px solid var(--E4E4E4, #E4E4E4);
     background: var(--White, #FFF);
     border: none;
+    outline: none;
+    flex: 1;
+
 }
 
-.footer-input:focus{
-    box-shadow: none;
-}
 
 .footer-input::placeholder {
     color: var(--Black, #000);
@@ -1330,6 +1352,11 @@ sub {
 .copyright-unordered li {
     margin-right: 18px;
     margin-left: 18px;
+}
+
+.copyright-unordered li:last-child {
+    margin-right: 0;
+
 }
 
 .listed-item {

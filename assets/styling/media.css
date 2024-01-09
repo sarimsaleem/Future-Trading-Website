@@ -1,5 +1,15 @@
 @media (min-width:320px) and (max-width:767px) {
 
+    .item-links{
+        margin: 0;
+    }
+
+    .nav-item{
+        margin: 0;
+    }
+
+    /* ////////////////////////////////////// end of section ///////////////////////////////////////////////// */
+
     .section2 .overlay-header-image-container .overlay-header-image .hero-img {
         right: auto;
         left: auto;
@@ -350,6 +360,21 @@
         display: none;
     }
 
+    .accordion{
+        width: 100%;
+    }
+
+    .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+        font-size: 16px;
+        gap: 20px;
+
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+
     /* ////////////////////////////////////////////////////end of ection/////////////////////////////////////////////// */
 
     .footer-unordered2 {
@@ -369,7 +394,7 @@
     .footer-email {
         height: 99px;
         width: 100%;
-        padding: 0;
+        padding: 0 4px;
     }
 
     .footer-input {
@@ -387,6 +412,17 @@
 
     }
 
+    .copyright{
+        display: inline-block;
+        justify-content: center;
+
+    }
+
+
+    .footer-center{
+        display: flex;
+        justify-content: center;
+    }
     /* /////////////////////////////////end of section///////////////////////////////////////////////// */
 
 }
@@ -396,6 +432,15 @@
 @media (min-width:768px) and (max-width:991px) {
 
 
+    .item-links{
+        margin: 0;
+    }
+
+    .nav-item{
+        margin: 0;
+    }
+
+    /* ////////////////////////////////////// end of section ///////////////////////////////////////////////// */
 
 
 
@@ -542,8 +587,23 @@
     .section8-main-img {
         margin: 0;
         height: 412px;
+    }
+
+    /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
+    .accordion{
+        width: 100%;
+    }
+
+    .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+        font-size: 16px;
+        gap: 20px;
+
+    }
+
+    .accordion-body {
+        font-size: 16px;
     }
 
 
@@ -556,9 +616,10 @@
  
     
     .footer-email {
-        height: 99px;
+        height:50px;
         width: 100%;
         padding: 0;
+        display: flex;
     }
 
     .footer-input {
@@ -568,7 +629,7 @@
 
     .footer-btn {
         width: 100%;
-        margin: 4px 0px 0 0px;
+        margin: 4px 4px 0 0px;
     }   
 }
 
@@ -638,7 +699,7 @@
     }
 
     .days-name {
-        padding: 10px 10px 10px 10px;
+        padding: 10px 7px 10px 7px;
     }
 
     .less-than {
@@ -647,15 +708,35 @@
     }
 
     /* //////////////////////////////////////////end of section///////////////////////////////////////////////////// */
+   
+    .accordion{
+        width: 80%;
+    }
+    
+    
     .section9-star1 {
         bottom: 0;
         right: 0;
     }
 
+    
+    .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+        font-size: 18px;
+        gap: 20px;
+
+    }
+    .accordion-body {
+        font-size: 16px;
+    }
+
+
+
+ /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
     .footer-email {
-        height: 99px;
+        height:50px;
         width: 100%;
         padding: 0;
+        display: flex;
     }
 
     .footer-input {
@@ -665,7 +746,7 @@
 
     .footer-btn {
         width: 100%;
-        margin: 4px 0px 0 0px;
+        margin: 4px 4px 0 0px;
     }   
 }
 
